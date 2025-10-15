@@ -1,0 +1,1163 @@
+/*======================uni====================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    list-style: 1.5;
+}
+:root{
+    --light-black: #8494932d;
+    --light-yellow: #DBC761;
+    --white: #fff;
+    --black: #080806;
+    --dark-black: #000000;
+}
+ul,
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.com-gap{
+    padding: 30px 0;
+}
+.heading-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heading{
+    width: 50%;
+}
+.heading-1{
+    color: var(--white);
+    font-size: 45px;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.heading-2{
+    color: var(--white);
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.heading-3{
+    color: var(--white);
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.heading-4{
+    color: var(--white);
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.heading p{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.text{
+    display: inline-block;
+    color: var(--light-yellow);
+}
+.text-one{
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figure img{
+    display: block;
+}
+.btn{
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 2px solid var(--light-yellow);
+    display: inline-block;
+    color: var(--light-yellow);
+    line-height: 1.1;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: var(--white);
+    color: black;
+    transition: 1,s all ease;
+}
+.btn i{
+    display: inline-block;
+    margin-left: 7px;
+    font-size: 16px;
+    line-height: 1.1;
+}
+/*=================header=========*/
+.header-menu{
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.123);
+    z-index: 1;
+    background-color: var(--dark-black);
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: block;
+    width: 100px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-menu li{
+    margin: 0 15px;
+}
+.nav-menu li a{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    display: block;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.1;
+    position: relative;
+}
+.nav-menu li a::after{
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -50%;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    transition: 1s all ease;
+}
+.nav-menu li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.nav-search a i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--white);
+}
+.icon{
+    display: none;
+}
+.icon a i{
+    color: var(--white);
+    font-size: 20px;
+}
+
+/*============banner=========*/
+.banner{
+    padding: 200px 0;
+    background-image: url(../img/banner-iamge.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.banner-details{
+    width: 50%;
+}
+.banner-details p{
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+/*=============about=========*/
+.about{
+    background-color: var(--black);
+    padding: 20px 0;
+}
+.about-child{
+    padding: 200px 0;
+    background-image: url(../img/about.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 30px;
+}
+.ab-iamge{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.ab-card img{
+    width: 70%;
+    margin-left: 10px;
+}
+/*============PrivateJets”=======*/
+.jets{
+    background-color: var(--black);
+}
+.jet-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.jet-card{
+    border: 1px solid var(--light-yellow);
+    border-radius: 20px;
+}
+.jet-det{
+    text-align: center;
+    padding: 15px 10px;
+}
+.jet-det p{
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.jet-det .btn{
+    border: none;
+}
+/*============serarvice==========*/
+.service{
+    padding: 50px 0;
+    background-image: url(../img/download\ \(26\).png);
+    background-color: rgba(0, 0, 0, 0.842) ;
+    background-blend-mode: darken;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.service-child-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+    border: 1px solid var(--light-yellow);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 30px 0px;
+}
+.ser-left-card,
+.ser-right-card{
+    width: 50%;
+    padding: 0 15px;
+}
+.ser-right-card{
+    margin-top: 20px;
+}
+.ser-left-card p{
+    width: 54%;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.ser-left-card .btn{
+    border-radius: 20px;
+}
+.ser-left-card .heading-3{
+    font-size: 40px;
+}
+.bt{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 18px;
+    border: 1px solid var(--light-yellow);
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+/*============offer================*/
+.offer{
+    background-color: var(--black);
+}
+.table-child .heading-2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--light-grean);
+    text-align: center;
+}
+table{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    text-align: center;
+}
+th
+,td{
+    padding: 16px;
+    border: 1px solid var(--white);
+    font-size: 14px;
+}
+td{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+td .btn{
+    border: none;
+}
+.ex-btn{
+    text-align: center;
+}
+/*=================our==============*/
+.our{
+    background-color: var(--black);
+}
+.our-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.our-layout{
+    width: calc(25% - 20px);
+}
+.our-det{
+    text-align: center;
+    background-color: var(--light-yellow);
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 1px 0;
+}
+.our-det .heading-3{
+    color: var(--dark-black);
+}
+.our-child p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--dark-black);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+.divi-image img{
+    padding: 10px 10px;
+    border: 1px solid var(--light-yellow);
+    border-radius: 20px;
+}
+.our .fo-btn .btn{
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+/*================clients================*/
+.Clients{
+    background-color: var(--black);
+}
+.client-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+.client-left-card,
+.client-right-card{
+    width: 50%;
+    padding: 0 15px;
+}
+.clients-layout{
+    margin-bottom: 50px;
+}
+.cli-man-det{
+    margin-left: 20px;
+}
+.clients-layout{
+    display: flex;
+    justify-content: space-between; 
+}
+.cli-man-det p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+.client-image-det{
+    width: 62%;
+}
+.say-layout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.say-divi-card{
+    background-color: #27220D;
+    border: 1px solid var(--light-yellow);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+.say-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+.say-image-det{
+    margin-left: 10px;
+}
+.say-det p{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+.say-image-det p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+}
+.one{
+    margin-top: 20px;
+}
+/*===============years===============*/
+.years{
+    background-color: var(--dark-black);
+}
+.years-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.year-left-card,
+.year-right-card{
+    width: 50%;
+    padding: 0 15px;
+}
+.form-card .heading-3{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.year-right-det .heading-2{
+    margin-bottom: 6px;
+}
+.year-right-det p{
+    font-size: 26px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.form-card{
+    padding: 60px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--light-yellow);
+}
+form input{
+    text-transform: capitalize;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 10px;
+    color: var(--black);
+    margin-bottom: 10px;
+    line-height: 1.1;
+    border-radius: 5px;
+    border: 1px solid var(--light-yellow);
+    background-color: #000000;
+}
+form label{
+    display: inline-block;
+    color: var(--white);
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+}
+form .btn{
+    width: 50%;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.year-right-card .text-one{
+    border: 1px solid var(--light-yellow);
+    padding: 6px 5px;
+    border-radius: 3px;
+}
+.text-y{
+    font-size: 100px;
+    color: var(--light-yellow);
+}
+.fo-btn{
+    text-align: center;
+}
+form ::placeholder{
+    color: #fff;
+}
+.fo-btn .btn{
+    padding: 20px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+/*===================footer===============*/
+.footer{
+    background-color: var(--dark-black);
+    padding: 100px 0;
+}
+.footer-layout p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+}
+.footer-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-layout{
+    width: calc(19% - 10px);
+    padding: 10px 10px;
+}
+.footer-layout a i{
+    color: var(--light-yellow);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.footer-layout a{
+    color: var(--white);}
+.fot-text{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+}
+.footer-details li a{
+    display: inline-block;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.fot-btn{
+    border: 2px solid var(--white);
+    display: inline-block;
+    background-color: var(--light-yellow);
+    padding: 10px 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+.input-btn{
+    position: relative;
+}
+.input-btn input{
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 400;
+    border: 2px solid var(--white);
+    width: 100%;
+    padding: 10px 10px;
+}
+.fot-btn{
+    position: absolute;
+    top: 0;
+    right: -16%;
+}
+.footer-icon a i{
+   border: 2px solid var(--light-yellow);
+   padding: 10px 10px;
+   margin-top: 20px;
+   border-radius: 20px;
+   margin-left: 5px;
+}
+.footer-btn{
+    border-top: 1px solid var(--light-yellow);
+}
+.footer-btn p{
+    margin-top: 20px;
+    text-transform: capitalize;
+    color: var(--white);
+}
+.fot-text::after{
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -40%;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    transition: 1s all ease;
+}
+.fot-text:hover::after{
+    width: 100%;
+    left: 0;
+}
+.footer-details li a:hover{
+    color: var(--light-yellow);
+    transition: 1,1s all ease;
+}
+.footer-icon a i:hover{
+    color: var(--light-yellow);
+    background-color: var(--white);
+}
+/*================responcib=============*/
+@media (min-width:320px) and (max-width:575.99px) {
+    /*============heading-all==========*/
+    .heading{
+        width: 100%;
+    }
+    .heading-1{
+        font-size: 30px;
+    }
+    .heading-2{
+        font-size: 25px;
+    }
+    .heading-3{
+        font-size: 17px;
+    }
+    .heading p{
+        font-size: 12px;
+    }
+    /*==============btn============*/
+    .btn{
+        font-size: 13px;
+        padding: 10px 9px;
+    }
+    .btn  i{
+        font-size: 13px;
+    }
+    /*===========navbar============*/
+    .logo img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .icon{
+       display: block;
+       cursor: pointer;
+    }
+    .showData{
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark-black);
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        height: 100%;
+    }
+    .nav-menu li a{
+        color:var(--white);
+    }
+    .nav-menu li{
+        padding: 10px;
+    }
+    .nav-search{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /*==============banner========*/
+    .banner{
+        padding: 65px 0;
+    }
+    .banner-details{
+        padding-top: 100px;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-details p{
+        font-size: 12px;
+    }
+    /*============about=========*/
+    .about{
+        background-color: var(--black);
+        padding: 20px 0;
+    }
+    .about-child{
+        padding: 100px 0;
+    }
+    .ab-card img{
+        margin-left: 20px;
+    }
+    /*==============jets==============*/
+    .jets{
+        padding: 20px 0;
+    }
+    .jet-child{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /*================service==========*/
+    .service{
+        padding: 20px 0;
+    }
+    .ser-left-card,
+    .ser-right-card{
+        width: 100%;
+    }
+    .ser-left-card .heading-3{
+        font-size: 25px;
+    }
+    .ser-left-card p{
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .ser-left-card{
+        width: 100%;
+        text-align: center;
+    }
+    /*====================offer===========*/
+    .offer{
+        padding: 20px 0;
+    }
+    .table-child .heading-3{
+        font-size: 11px;
+    }
+    .table-child td{
+        font-size: 10px;
+    }
+    /*=================our==============*/
+    .our{
+        padding: 20px 0;
+    }
+    .our-child{
+        gap: 10px;
+    }
+    .our-layout{
+        width: 100%;
+    }
+    /*==================Clients=========*/
+    .Clients{
+        padding: 20px 0;
+    }
+    .client-left-card,
+    .client-right-card{
+        width: 100%;
+    }
+    .say-layout{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .say-image-det p{
+        font-size: 13px;
+    }
+    .say-det p{
+        font-size: 13px;
+    }
+    .cli-man-det p{
+        font-size: 13px;
+    }
+    .clients-layout{
+        margin-bottom: 10px;
+    }
+    /*=============years====================*/
+    .years{
+        padding: 20px 0;
+    }
+    .form-card .heading-3{
+        font-size: 40px;
+    }
+    .text-y{
+        font-size: 70px;
+    }
+    .year-left-card,
+    .year-right-card{
+        width: 100%;
+    }  
+    .fo-btn .btn{
+       padding: 15px 10px;
+       border-radius: 50px;
+       font-size: 15px;
+    }
+
+    /*===============footer=================*/
+    .footer{
+        padding: 20px 0;
+    }
+    .footer-layout{
+        width: 100%;
+    }
+    .fot-btn{
+        right: 0;
+    }
+}
+@media (min-width:576px) and (max-width:767.99px) {
+    /*============heading-all==========*/
+    .heading{
+        width: 100%;
+    }
+    .heading-1{
+        font-size: 40px;
+    }
+    .heading-2{
+        font-size: 30px;
+    }
+    .heading-3{
+        font-size: 17px;
+    }
+    .heading p{
+        font-size: 12px;
+    }
+    /*==============btn============*/
+    .btn{
+        font-size: 13px;
+        padding: 10px 9px;
+    }
+    .btn  i{
+        font-size: 13px;
+    }
+    /*===========navbar============*/
+    .logo img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .icon{
+       display: block;
+       cursor: pointer;
+    }
+    .showData{
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark-black);
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        height: 100%;
+    }
+    .nav-menu li a{
+        color:var(--white);
+    }
+    .nav-menu li{
+        padding: 10px;
+    }
+    .nav-search{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /*==============banner========*/
+    .banner{
+        padding: 100px 0;
+    }
+    .banner-details{
+        width: 100%;
+        padding-top: 100px;
+        text-align: center;
+    }
+    /*============about=========*/
+    .about{
+        background-color: var(--black);
+        padding: 20px 0;
+    }
+    .about-child{
+        padding: 100px 0;
+    }
+    .ab-card img{
+        margin-left: 22px;
+    }
+    /*==============jets==============*/
+    .jets{
+        padding: 30px 0;
+    }
+    .jet-child{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /*================service==========*/
+    .service{
+        padding: 30px 0;
+    }
+    .ser-left-card,
+    .ser-right-card{
+        width: 100%;
+    }
+    .ser-left-card .heading-3{
+        font-size: 30px;
+    }
+    .ser-left-card p{
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+    }
+    .ser-left-card{
+        width: 100%;
+        text-align: center;
+    }
+    /*====================offer===========*/
+    .offer{
+        padding: 30px 0;
+    }
+    /*=================our==============*/
+    .our{
+        padding: 30px 0;
+    }
+    .our-child{
+        gap: 10px;
+    }
+    .our-layout{
+        width: calc(50% - 10px);
+    }
+    /*==================Clients=========*/
+    .Clients{
+        padding: 30px 0;
+    }
+    .client-left-card,
+    .client-right-card{
+        width: 100%;
+    }
+    .say-layout{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .say-image-det p{
+        font-size: 14px;
+    }
+    .say-det p{
+        font-size: 14px;
+    }
+    .cli-man-det p{
+        font-size: 14px;
+    }
+    .clients-layout{
+        margin-bottom: 10px;
+    }
+    /*=============years====================*/
+    .years{
+        padding: 30px 0;
+    }
+    .year-left-card,
+    .year-right-card{
+        width: 100%;
+    }   
+    /*===============footer=================*/
+    .footer{
+        padding: 40px 0;
+    }
+    .footer-layout{
+       width: calc(52% - 20px);
+    }
+    .fot-btn{
+        right: 0;
+    }
+}
+@media (min-width:768px) and (max-width:991.99px) {
+    /*============heading-all==========*/
+    .heading{
+        width: 100%;
+    }
+    .heading-1{
+        font-size: 50px;
+    }
+    .heading-2{
+        font-size: 35px;
+    }
+    .heading-3{
+        font-size: 17px;
+    }
+    /*===========navbar============*/
+    .logo img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .icon{
+       display: block;
+       cursor: pointer;
+    }
+    .showData{
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark-black);
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        height: 100%;
+    }
+    .nav-menu li a{
+        color:var(--white);
+    }
+    .nav-menu li{
+        padding: 10px;
+    }
+    .nav-search{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /*==============banner========*/
+    .banner{
+        padding: 100px 0;
+    }
+    .banner-details{
+        width: 100%;
+       padding-top: 100px;
+        text-align: center;
+    }
+    /*============about=========*/
+    .about{
+        background-color: var(--black);
+    }
+    .about-child{
+        padding: 150px 0;
+    }
+    /*==============jets==============*/
+    .jet-child{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /*================service==========*/
+    .ser-left-card,
+    .ser-right-card{
+        width: 100%;
+    }
+    .ser-left-card .heading-3{
+        font-size: 35px;
+    }
+    .ser-left-card p{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .ser-left-card{
+        width: 100%;
+        text-align: center;
+    }
+    /*=================our==============*/
+    .our-child{
+        justify-content: center;
+        gap: 10px;
+    }
+    .our-layout{
+        width: calc(33% - 10px);
+    }
+    /*==================Clients=========*/
+    .client-left-card,
+    .client-right-card{
+        width: 100%;
+    }
+    .say-layout{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /*=============years====================*/
+    .year-left-card,
+    .year-right-card{
+        width: 100%;
+    } 
+    /*===============footer=================*/
+    .footer{
+        padding: 60px 0;
+    }
+    .footer-layout{
+       width: calc(35% - 20px);
+    }
+    .fot-btn{
+        right: 0;
+    }  
+}
+@media (min-width:992px) and (max-width:1199.99px) {
+    /*=============years====================*/
+    .year-left-card,
+    .year-right-card{
+        width: 100%;
+    }
+    /*===============footer=================*/
+    .footer{
+        padding: 80px 0;
+    }
+    .footer-layout{
+       width: calc(25% - 20px);
+    }
+    .fot-btn{
+        right: 0;
+    }     
+}
+@media (min-width:1200px) and (max-width:1399.99px) {
+    
+}
